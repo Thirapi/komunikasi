@@ -1,17 +1,20 @@
 import React from "react"
-import messages from "./messages"
+import Link from "next/link"
+import messages from "./dummy"
 import { FiCornerUpLeft, FiSend, FiCornerDownRight } from "react-icons/fi";
 import { LuClover } from "react-icons/lu";
 import SideBar from "../_components/SideBar";
+import Header from "../_components/Header"
 
 export default async function App() {
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-black">
+        <div className="min-h-screen overflow-hidden sm:flex items-center justify-center bg-black">
             <SideBar />
             <div className="text-white w-full mx-auto max-w-4xl h-screen pt-0 pr-8 pb-4 pl-8 rounded-b-xl border-solid border-slate-400 border-b border-l border-r bg-gray-950 flex flex-col">
                 <div className="flex flex-1 flex-col overflow-hidden">
-                    <div className="overflow-y-scroll scrollbar-thin scrollbar-track-slate-600 scrollbar-thumb-slate-400 flex-1 mb-4">
+                <Header />
+                    <div className="overflow-hidden flex-1 mb-4">
                     {messages.map((msg) => (
                         <div key={msg.id} className="mb-1 p-2 border-slate-400 border-b hover:bg-gray-900 transition duration-200">
                             <div className="flex items-center mb-1">
@@ -22,6 +25,13 @@ export default async function App() {
                                 balas
                                 </button>
                             </div>
+                            {msg.reply_to_message && (
+                                <div className="py-1 rounded mb-2 text-sm flex items-center bg-gray-900">
+                                    <FiCornerDownRight className="mr-2" />
+                                    <strong className="mr-1">{msg.reply_to_username}</strong>
+                                    <span>{msg.reply_to_message}</span>
+                                </div>
+                            )}
                             <div>{msg.message}</div>
                         </div>
                     ))}

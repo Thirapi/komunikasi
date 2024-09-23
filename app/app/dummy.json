@@ -1,0 +1,41 @@
+[{
+    "id":1,
+    "user_id":1,
+    "message":"welcome to an awful place (🗿)",
+    "reply_to":null,
+    "created_at":"06/08/1945 9:11 AM",
+    "username":"admin",
+    "reply_to_message":null,
+    "reply_to_username":null
+},
+{
+    "id":2,
+    "user_id":2,
+    "message":"hey bro",
+    "reply_to":null,
+    "created_at":"06/08/1945 9:15 AM",
+    "username":"tester",
+    "reply_to_message":null,
+    "reply_to_username":null
+},
+{
+    "id":3,
+    "user_id":3,
+    "message":"hey, how r y?",
+    "reply_to":null,
+    "created_at":"06/08/1945 9:15 AM",
+    "username":"fufufafa",
+    "reply_to_message":null,
+    "reply_to_username":null
+},
+{
+    "id":4,
+    "user_id":2,
+    "message":"wtf!,gibr**",
+    "reply_to":3,
+    "created_at":"06/08/1945 9:15 AM",
+    "username":"tester",
+    "reply_to_message":"hey, how r y?",
+    "reply_to_username":"fufufafa"
+}
+]

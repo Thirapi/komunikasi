@@ -4,7 +4,7 @@ import { HiOutlineLogout } from "react-icons/hi";
 
 export default function SideBar () {
     return (
-        <aside className="bg-gray-950 bg-opacity-50 backdrop-blur-md border-r border-solid border-slate-400 w-12 h-screen p-2 flex flex-col">
+      <aside className="hidden sm:flex bg-gray-950 bg-opacity-50 backdrop-blur-md border-r border-solid border-slate-400 w-12 h-screen p-2 flex-col">
         <div className="flex items-center">
           <Link href="/app">
           <LuClover className="text-green-400 text-3xl" />
