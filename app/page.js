@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import { useState } from 'react';
 import axios from 'axios';
-import Link from 'next/link'
-import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [username, setUsername] = useState('');
@@ -14,7 +14,7 @@ export default function Home() {
     e.preventDefault();
     try {
       const response = await axios.post(`https://msg-api-eight.vercel.app/api/users/login`, { username, password });
-      // const response = await axios.post(`${import.meta.env.VITE_API_URL}/users/login`, { username, password });
+      // const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/users/login`, { username, password });
 
       const { token } = response.data;
       localStorage.setItem('token', token); // Simpan token di localStorage
@@ -56,7 +56,7 @@ export default function Home() {
             Login
           </button>
           <div className="mt-2 text-white text-start">
-            <p classNane="text-sm">Don&apos;t have an account? 
+            <p className="text-sm">Don&apos;t have an account? 
               <Link href="/signup" className="text-blue-500 hover:text-blue-700"> Sign up now.</Link>
             </p>
           </div>
