@@ -18,7 +18,7 @@ export default function Home() {
 
       const { token } = response.data;
       localStorage.setItem('token', token); // Simpan token di localStorage
-      router('/app');
+      router.push('/app');
     } catch (error) {
       console.error('Error:', error.response?.data);
       setError(error.response?.data?.message || 'Error logging in');
