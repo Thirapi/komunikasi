@@ -32,9 +32,9 @@ export default function Register() {
           <button className="w-full text-indigo-400 font-semibold py-2 px-4 rounded-lg bg-indigo-600 bg-opacity-30 hover:bg-opacity-50 bg-blur-md border-indigo-600 border transition duration-300">
             Register
           </button>
-          <div class="mt-2 text-white text-start">
-            <p class="text-sm">Already have an account?  
-              <Link href="./" class="text-blue-500 hover:text-blue-700"> Sign in here.</Link>
+          <div className="mt-2 text-white text-start">
+            <p className="text-sm">Already have an account?  
+              <Link href="./" className="text-blue-500 hover:text-blue-700"> Sign in here.</Link>
             </p>
           </div>
         </form>
