@@ -26,7 +26,7 @@ export default function Home() {
             Login
           </button>
           <div class="mt-2 text-white text-start">
-            <p class="text-sm">Don't have an account? 
+            <p class="text-sm">Don&apos;t have an account? 
               <Link href="/signup" class="text-blue-500 hover:text-blue-700"> Sign up now.</Link>
             </p>
           </div>

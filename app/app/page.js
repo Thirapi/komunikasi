@@ -1,12 +1,10 @@
-import React from "react"
-import Link from "next/link"
-import messages from "./dummy"
+import React from "react";
+import messages from "./dummy";
 import { FiCornerUpLeft, FiSend, FiCornerDownRight } from "react-icons/fi";
-import { LuClover } from "react-icons/lu";
 import SideBar from "../_components/SideBar";
-import Header from "../_components/Header"
+import Header from "../_components/Header";
 
-export default async function App() {
+export default function App() {
 
     return (
         <div className="min-h-screen overflow-hidden sm:flex items-center justify-center bg-black">

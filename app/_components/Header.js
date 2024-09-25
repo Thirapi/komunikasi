@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import { LuClover } from "react-icons/lu";
 import { HiOutlineLogout } from "react-icons/hi";
 
