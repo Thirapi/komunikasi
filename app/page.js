@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link'
-import { useNavigate } from 'react-router-dom'
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ export default function Home() {
 
       const { token } = response.data;
       localStorage.setItem('token', token); // Simpan token di localStorage
-      navigate('/app');
+      router('/app');
     } catch (error) {
       console.error('Error:', error.response?.data);
       setError(error.response?.data?.message || 'Error logging in');
