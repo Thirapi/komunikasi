@@ -52,7 +52,7 @@ export default function Home() {
               required
             />
           </div>
-          <button className="w-full text-indigo-400 font-semibold py-2 px-4 rounded-lg bg-indigo-600 bg-opacity-30 hover:bg-opacity-50 bg-blur-md border-indigo-600 border transition duration-300">
+          <button type="submit" className="w-full text-indigo-400 font-semibold py-2 px-4 rounded-lg bg-indigo-600 bg-opacity-30 hover:bg-opacity-50 bg-blur-md border-indigo-600 border transition duration-300">
             Login
           </button>
           <div className="mt-2 text-white text-start">
